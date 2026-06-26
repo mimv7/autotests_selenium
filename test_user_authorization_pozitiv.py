@@ -23,7 +23,7 @@ get_url_inventory = driver.current_url
 print(get_url_inventory)
 assert url_inventory == get_url_inventory, \
     f"Ожидался URL {url_inventory}, но открылся {get_url_inventory}"
-
+print('ok')
 
 # Скрипт остановится и будет ждать нажатия Enter в терминале
 input("Нажмите Enter в консоли, чтобы закрыть браузер...")

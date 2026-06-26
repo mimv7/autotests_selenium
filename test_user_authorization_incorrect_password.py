@@ -24,6 +24,7 @@ warning_text_received = driver.find_element('xpath', "//h3[@data-test='error']")
 warning_text_expected = 'Epic sadface: Username and password do not match any user in this service'
 assert warning_text_expected == warning_text_received, \
     f"Ожидался URL {warning_text_expected}, но открылся {warning_text_received}"
+print('ok')
 
 
 # Скрипт остановится и будет ждать нажатия Enter в терминале

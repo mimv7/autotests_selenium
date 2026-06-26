@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ac57602-3189-418a-a207-dbf2ddf32840" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test_user_authorization_incorrect_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_user_authorization_incorrect_password.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_user_authorization_pozitiv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_1.py" beforeDir="false" />
-    </list>
+    <list default="true" id="0ac57602-3189-418a-a207-dbf2ddf32840" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,22 +41,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.diet.executor": "Run",
-    "Python.eller_project.executor": "Run",
-    "Python.lesson1.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.test_2.executor": "Run",
-    "Python.test_user_authorization_incorrect_password.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Python/autotest_selenium"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.diet.executor&quot;: &quot;Run&quot;,
+    &quot;Python.eller_project.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lesson1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_user_authorization_incorrect_password.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Python/autotest_selenium&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Python\autotest_selenium" />
