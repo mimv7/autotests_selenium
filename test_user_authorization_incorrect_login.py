@@ -18,11 +18,12 @@ password.send_keys(password_all)
 button_login = driver.find_element('id', "login-button")
 button_login.click()
 
-warning_text_received = driver.find_element('xpath', "//h3[@data-test='error']").text
+warning_text_received = driver.find_element('xpath', "//h3[@data-test='error']")
+value_warning_text_received = warning_text_received.text
 
 
 warning_text_expected = 'Epic sadface: Username and password do not match any user in this service'
-assert warning_text_expected == warning_text_received, \
+assert warning_text_expected == value_warning_text_received, \
     f"Ожидался URL {warning_text_expected}, но открылся {warning_text_received}"
 print('ok')
 
