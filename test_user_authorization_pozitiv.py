@@ -1,3 +1,6 @@
+import datetime
+import time
+
 from  selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -16,7 +19,7 @@ user_name.send_keys(login_standard_user)
 password = driver.find_element('id', 'password')
 password.send_keys(password_all)
 button_login = driver.find_element('id', "login-button")
-button_login.click()
+button_login.click() #клик по кнопке
 
 url_inventory = 'https://www.saucedemo.com/inventory.html'
 get_url_inventory = driver.current_url
@@ -24,6 +27,12 @@ print(get_url_inventory)
 assert url_inventory == get_url_inventory, \
     f"Ожидался URL {url_inventory}, но открылся {get_url_inventory}"
 print('ok')
+
+
+now_date = datetime.datetime.now().strftime("%H.%M.%S-%d.%m.%Y")
+print(now_date)
+name_screenshot = 'screenshot ' + now_date + '.png'
+driver.save_screenshot('C:\\Python\\autotest_selenium\\screen\\' +name_screenshot)
 
 # Скрипт остановится и будет ждать нажатия Enter в терминале
 input("Нажмите Enter в консоли, чтобы закрыть браузер...")
