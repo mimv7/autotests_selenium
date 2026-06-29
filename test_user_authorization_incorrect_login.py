@@ -26,6 +26,7 @@ warning_text_expected = 'Epic sadface: Username and password do not match any us
 assert warning_text_expected == value_warning_text_received, \
     f"Ожидался URL {warning_text_expected}, но открылся {warning_text_received}"
 print('ok')
+#driver.refresh()
 
 # Скрипт остановится и будет ждать нажатия Enter в терминале
 input("Нажмите Enter в консоли, чтобы закрыть браузер...")
