@@ -1,30 +1,29 @@
 import datetime
 import time
 
-from  selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 
-options = Options()
-options.add_experimental_option("detach", True)  # не закрывать браузер
+# Инициализируем настройки один раз
+options = webdriver.ChromeOptions()
 
-# --- БЛОКИРОВКА МЕНЕДЖЕРА ПАРОЛЕЙ И АВТОЗАПОЛНЕНИЯ ---
-prefs = {
-    "credentials_enable_service": False,     # Отключить службу учетных данных
-    "profile.password_manager_enabled": False # Отключить сам менеджер паролей
-}
-options.add_experimental_option("prefs", prefs)
+# Включаем отсоединение: браузер останется открытым после завершения скрипта
+options.add_experimental_option("detach", True)
 
-# Остальные фиксы для стабильности (от крашей)
-options.add_argument("--disable-blink-features=AutomationControlled")
-options.add_experimental_option("excludeSwitches", ["enable-automation"])
-options.use_automation_extension = False
-# ----------------------------------------------------
-#options.add_argument("--headless=new")
-driver = webdriver.Chrome(options=options)
+# Режим гостя (все сессии чистые, история не сохраняется)
+options.add_argument("--guest")
+# АЛЬТЕРНАТИВА: если гостевой режим работает некорректно, раскомментируйте строку ниже:
+# options.add_argument("--incognito")
 
-driver.get('https://www.saucedemo.com/')
+# Для фонового режима (без графического окна) раскомментируйте это:
+# options.add_argument("--headless=new")
+
+# Запуск браузера (в Selenium 4+ Service() автоматически найдет chromedriver)
+driver = webdriver.Chrome(service=Service(), options=options)
+
+# Логика автоматизации
+base_url = 'https://www.saucedemo.com/'
+driver.get(base_url)
 driver.maximize_window()
 
 login_standard_user = 'standard_user'
