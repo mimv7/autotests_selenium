@@ -39,10 +39,10 @@ button_login.click() #клик по кнопке
 #info product 1
 product_1 = driver.find_element('xpath', '//a[@id="item_4_title_link"]')
 value_product_1 = product_1.text
-print(f'value_product_1 {value_product_1}')
+print(f'value_product_1 - {value_product_1}')
 price_1 = driver.find_element('xpath', '//*[@id="inventory_container"]/div/div[1]/div[2]/div[2]/div')
 value_price_1 = price_1.text
-print(f'value_price_1 {value_price_1}')
+print(f'value_price_1 - {value_price_1}')
 
 #select product 1
 select_product_1 = driver.find_element('xpath', '//*[@id="add-to-cart-sauce-labs-backpack"]')
@@ -52,37 +52,45 @@ print('select_product_1')
 #info product 2
 product_2 = driver.find_element('xpath', '//a[@id="item_0_title_link"]')
 value_product_2 = product_2.text
-print(f'value_product_1 {value_product_2}')
+print(f'value_product_1 - {value_product_2}')
 price_2 = driver.find_element('xpath', '//*[@id="inventory_container"]/div/div[2]/div[2]/div[2]/div')
 value_price_2 = price_2.text
-print(f'value_price_2 {value_price_2}')
-
-
-'''stop this'''
-
+print(f'value_price_2 - {value_price_2}')
 
 #select product 2
-select_product_2 = driver.find_element('xpath', '//*[@id="add-to-cart-sauce-labs-backpack"]')
+select_product_2 = driver.find_element('xpath', '//*[@id="add-to-cart-sauce-labs-bike-light"]')
 select_product_2.click()
 print('select_product_2')
 
 #open shopping cart
-cart = driver.find_element('xpath','//*[@id="shopping_cart_container"]/a')
+cart = driver.find_element('xpath','//*[@id="shopping_cart_container"]')
 cart.click()
 print('open cart')
 
 #info cart
-cart_product_1 = driver.find_element('xpath', '//*[@id="item_4_title_link"]/div')
+cart_product_1 = driver.find_element('xpath', '//a[@id="item_4_title_link"]')
 value_cart_product_1 = cart_product_1.text
-print(f'value_cart_product_1 {value_cart_product_1}')
+print(f'value_cart_product_1 - {value_cart_product_1}')
 cart_price_1 = driver.find_element('xpath', '//*[@id="cart_contents_container"]/div/div[1]/div[3]/div[2]/div[2]/div')
 value_cart_price_1 = cart_price_1.text
-print(f'value_cart_price_1 {value_cart_price_1}')
+print(f'value_cart_price_1 - {value_cart_price_1}')
+
+cart_product_2 = driver.find_element('xpath','//a[@id="item_0_title_link"]')
+value_cart_product_2 = cart_product_2.text
+print(f'value_cart_product_2 - {value_cart_product_2}')
+cart_price_2 = driver.find_element('xpath','//*[@id="cart_contents_container"]/div/div[1]/div[4]/div[2]/div[2]/div')
+value_cart_price_2 = cart_price_2.text
+print(f'value_cart_price_2 - {value_cart_price_2}')
 
 #assert
 assert value_product_1 == value_cart_product_1
 print('\n assert value card - ok')
 assert value_price_1 == value_cart_price_1
+print('\n assert price - ok\n')
+
+assert value_product_2 == value_cart_product_2
+print('\n assert value card - ok')
+assert value_price_2 == value_cart_price_2
 print('\n assert price - ok\n')
 
 button_checkout = driver.find_element('xpath', '//button[@id="checkout"]')
@@ -103,22 +111,47 @@ button_continue = driver.find_element('xpath', '//input[@id="continue"]')
 button_continue.click()
 print('btn continue click')
 
-#finish product
+#finish product 1
 finish_product_1 = driver.find_element('xpath','//a[@id="item_4_title_link"]')
 value_finish_product_1 = finish_product_1.text
 print(f'value_finish_product_1 {value_finish_product_1}')
-finish_price_1 = driver.find_element('xpath','//div[@class="inventory_item_price"]')
+finish_price_1 = driver.find_element('xpath','//*[@id="checkout_summary_container"]/div/div[1]/div[3]/div[2]/div[2]/div')
 value_finish_price_1 = finish_price_1.text
 print(f'value_finish_price_1 {value_finish_price_1}')
 
-assert value_product_1 == value_finish_product_1
-print('\n assert finish droduct - ok')
-assert value_price_1 == value_finish_price_1
-print('\n assert finish price - ok \n')
+#finish product 2
+finish_product_2 = driver.find_element('xpath', '//a[@id="item_0_title_link"]')
+value_finish_product_2 = finish_product_2.text
+print(f'value_finish_product_2 - {value_finish_product_2}')
+finish_price_2 = driver.find_element('xpath','//*[@id="checkout_summary_container"]/div/div[1]/div[4]/div[2]/div[2]/div')
+value_finish_price_2 = finish_price_2.text
+print(f'value_finish_price_2 - {value_finish_price_2}')
 
-fix_price = f'$29.99'
-assert  fix_price == value_finish_price_1
-print('fix price assert - ok')
+#assert
+assert value_product_1 == value_finish_product_1
+print('\n assert finish droduct 1 - ok')
+assert value_price_1 == value_finish_price_1
+print('\n assert finish price 1 - ok \n')
+
+assert value_product_2 == value_finish_product_2
+print('\n assert finish droduct 2 - ok')
+assert value_price_2 == value_finish_price_2
+print('\n assert finish price 2 - ok \n')
+
+total_price =driver.find_element('xpath','//*[@id="checkout_summary_container"]/div/div[2]/div[6]')
+value_total_price = total_price.text
+print(f'value_total_price - {value_total_price}')
+
+
+#summ price 2 product
+price_1 = float(value_price_1.replace('$',''))
+price_2 = float(value_price_2.replace('$',''))
+control_summ_price = price_1 + price_2
+print(control_summ_price)
+content_summ_price = f'Item total: ${control_summ_price}'
+
+assert  content_summ_price == value_total_price
+print('assert total price - ok')
 
 
 now_date = datetime.datetime.now().strftime("%H.%M.%S-%d.%m.%Y")
