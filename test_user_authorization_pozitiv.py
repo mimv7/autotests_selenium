@@ -8,7 +8,8 @@ options = Options()
 options.add_argument("--headless=new")
 driver = webdriver.Chrome(options=options)
 
-driver.get('https://www.saucedemo.com/')
+base_url = 'https://www.saucedemo.com/'
+driver.get(base_url)
 driver.maximize_window()
 
 login_standard_user = 'standard_user'

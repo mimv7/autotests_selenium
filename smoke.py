@@ -148,7 +148,7 @@ price_1 = float(value_price_1.replace('$',''))
 price_2 = float(value_price_2.replace('$',''))
 control_summ_price = price_1 + price_2
 print(control_summ_price)
-content_summ_price = f'Item total: ${control_summ_price}'
+content_summ_price = f'Item total: ${control_summ_price:.2f}'
 
 assert  content_summ_price == value_total_price
 print('assert total price - ok')

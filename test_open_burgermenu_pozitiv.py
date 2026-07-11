@@ -3,6 +3,7 @@ import time
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.support.wait import WebDriverWait
 
 # Инициализируем настройки один раз
 options = webdriver.ChromeOptions()
@@ -47,10 +48,11 @@ menu.click()
 print('open menu')
 time.sleep(3)
 
+wait = WebDriverWait(driver, 10)
 link_about = driver.find_element('xpath', '//a[@id="about_sidebar_link"]')
 link_about.click()
 time.sleep(5)
-print('open about')
+
 
 url_saucelabs = 'https://saucelabs.com/'
 get_url_saucelabs = driver.current_url
