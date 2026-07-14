@@ -16,26 +16,29 @@ category_elements = driver.find_element('xpath', '//*[@id="root"]/div/div/div[2]
 category_elements.click()
 print('click category_elements')
 time.sleep(2)
-elements_checkbox = driver.find_element('xpath', '//*[@id="item-1"]')
-elements_checkbox.click()
+elements_radiobutton = driver.find_element('xpath', '//*[@id="item-2"]/a')
+elements_radiobutton.click()
 time.sleep(2)
-print('click elements_checkbox')
+print('click elements_Radiobutton')
+
+radio_button_yes = driver.find_element('xpath', '//input[@id="yesRadio"]')
+radio_button_yes.click()
+if radio_button_yes.is_selected():
+    print('on click yes')
+else:
+    print('not click yes')
+
+radio_button_impressiveRadio =driver.find_element('xpath', '//input[@id="impressiveRadio"]')
+radio_button_impressiveRadio.click()
+print(' click radio_button_impressiveRadio')
+if radio_button_yes.is_selected():
+    print('on click yes')
+else:
+    print('not click yes')
 
 
-checkbox_home = driver.find_element('xpath','//span[@class = "rc-tree-checkbox"]')
-checkbox_home.click()
-print('click checkbox_home')
-time.sleep(3)
 
-value_checkbox_home_result ='You have selected :'
-checkbox_home_result = driver.find_element('xpath','//*[@id="result"]/span[1]')
-get_checkbox_home_result = checkbox_home_result.text
-assert  value_checkbox_home_result == get_checkbox_home_result
-print('value_checkbox_home_result - ok')
 
-reveal_checkbox_home = driver.find_element('xpath','//span[@class="rc-tree-switcher rc-tree-switcher_close"]')
-reveal_checkbox_home.click()
-print('click reveal_checkbox_home')
 
 '''now_date = datetime.datetime.now().strftime("%H.%M.%S-%d.%m.%Y")
 print(now_date)
