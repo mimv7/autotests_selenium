@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ac57602-3189-418a-a207-dbf2ddf32840" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test_date_picker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_5_24.py" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_5_24.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +49,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.diet.executor": "Run",
     "Python.eller_project.executor": "Run",
+    "Python.home_work_5_24.executor": "Run",
     "Python.lesson1.executor": "Run",
     "Python.main.executor": "Run",
     "Python.smoke.executor": "Run",
@@ -79,7 +80,29 @@
       <recent name="C:\Python\autotest_selenium" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_date_picker">
+  <component name="RunManager" selected="Python.home_work_5_24">
+    <configuration name="home_work_5_24" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="autotests_selenium" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home_work_5_24.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_checkbox" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="autotests_selenium" />
       <option name="ENV_FILES" value="" />
@@ -146,28 +169,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_open_burgermenu_pozitiv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="autotests_selenium" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_open_burgermenu_pozitiv.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_radiobutton" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="autotests_selenium" />
       <option name="ENV_FILES" value="" />
@@ -192,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.home_work_5_24" />
         <item itemvalue="Python.test_date_picker" />
         <item itemvalue="Python.test_click_button" />
         <item itemvalue="Python.test_radiobutton" />
         <item itemvalue="Python.test_checkbox" />
-        <item itemvalue="Python.test_open_burgermenu_pozitiv" />
       </list>
     </recent_temporary>
   </component>
