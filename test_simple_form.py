@@ -9,18 +9,10 @@ from selenium.webdriver.support.wait import WebDriverWait
 # Инициализируем настройки один раз
 options = webdriver.ChromeOptions()
 
-# Включаем отсоединение: браузер останется открытым после завершения скрипта
 options.add_experimental_option("detach", True)
 
-# Режим гостя (все сессии чистые, история не сохраняется)
 options.add_argument("--guest")
-# АЛЬТЕРНАТИВА: если гостевой режим работает некорректно, раскомментируйте строку ниже:
-# options.add_argument("--incognito")
 
-# Для фонового режима (без графического окна) раскомментируйте это:
-# options.add_argument("--headless=new")
-
-# Запуск браузера (в Selenium 4+ Service() автоматически найдет chromedriver)
 driver = webdriver.Chrome(service=Service(), options=options)
 
 # Логика автоматизации
@@ -28,7 +20,23 @@ base_url = 'https://www.testmuai.com/selenium-playground/simple-form-demo/'
 driver.get(base_url)
 driver.maximize_window()
 
-time.sleep(5)
+time.sleep(2)
+
+input_pole = driver.find_element('xpath', '//input[@id="user-message"]')
+input_pole.click()
+print('click input pole')
+message_for_input_pole = '123'
+input_pole.send_keys(message_for_input_pole)
+
+button_get_value = driver.find_element('xpath','//button[contains(text(),"Get Checked Value")]')
+button_get_value.click()
+print('click button "Get Checked Value"')
+
+pole_message = driver.find_element('xpath','//p[@id="message"]')
+value_pole_message = pole_message.text
+
+assert message_for_input_pole == value_pole_message
+print('ok')
 
 '''now_date = datetime.datetime.now().strftime("%H.%M.%S-%d.%m.%Y")
 print(now_date)
