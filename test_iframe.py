@@ -1,14 +1,10 @@
 import datetime
+import time
 
 from selenium import webdriver
 from selenium.webdriver import Keys
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-import time
 
-from test_back_forward import wait
 
 # Инициализируем настройки один раз
 options = webdriver.ChromeOptions()
@@ -27,11 +23,11 @@ driver.maximize_window()
 time.sleep(5)
 
 # 1. Ждем загрузки iframe и переключаемся внутрь него
-iframe = wait.until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
+iframe = driver.find_element('xpath','//*[@id="iFrame1"]')
 driver.switch_to.frame(iframe)
 
 # 2. Теперь ищем элемент внутри iframe
-content_table = wait.until(EC.presence_of_element_located((By.XPATH, '//div[@id="__next"]//div[@class="rsw-ce"]')))
+content_table = driver.find_element('xpath','//*[@id="__next"]/div/div/div[2]')
 value_content_table = content_table.text
 print(value_content_table)
 content_table.click()
@@ -43,7 +39,10 @@ print('click editor bold')
 
 
 bold_value_content_table = driver.find_element('xpath','//*[@id="__next"]/div/div/div[2]/b')
-assert value_content_table == bold_value_content_table
+value_bold_value_content_table = bold_value_content_table.text
+print(value_content_table)
+print(value_bold_value_content_table)
+assert  value_content_table == value_bold_value_content_table
 print('ok')
 
 
