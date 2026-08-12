@@ -1,17 +1,18 @@
 import datetime
+import sys
 import time
-
-from  selenium import webdriver
+from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
 
-options = webdriver.ChromeOptions()
-
-driver = webdriver.Chrome()
+options = Options()
+# Гарантированный способ: запускаем Chrome как гостя
+options.add_argument("--guest")
+# Альтернативно убираем лишние уведомления автоматизации
+options.add_argument('--disable-blink-features=AutomationControlled')
+# Инициализируем драйвер с опциями
+driver = webdriver.Chrome(options=options)
 
 driver.get('https://www.saucedemo.com/')
-
-
 
 login_standard_user = 'standard_user'
 password_all = 'secret_sauce'
@@ -21,7 +22,7 @@ user_name.send_keys(login_standard_user)
 password = driver.find_element('id', 'password')
 password.send_keys(password_all)
 button_login = driver.find_element('id', "login-button")
-button_login.click() #клик по кнопке'''
+button_login.click()
 
 
 print('\tПриветствую тебя в нашем интернет - магазине')
@@ -31,7 +32,8 @@ print('Выбери один из следующих товаров и укаж�
       '\n Sauce Labs Bolt T-Shirt - 3'
       '\n Sauce Labs Fleece Jacket - 4'
       '\n Sauce Labs Onesie - 5'
-      '\n Test.allTheThings() T-Shirt (Red) - 6')
+      '\n Test.allTheThings() T-Shirt (Red) - 6'
+      '\n')
 num_product = input()
 if num_product == '1':
     print('Sauce Labs Backpack')
@@ -205,6 +207,8 @@ elif num_product == '6':
     print('\n assert price - ok\n')
 else:
     print('Вы выбрали что то не то')
+    driver.quit()
+    sys.exit()
 #------------------------------------
 
 driver.implicitly_wait(10)
@@ -226,9 +230,9 @@ print('input zip code')
 button_continue = driver.find_element('xpath', '//input[@id="continue"]')
 button_continue.click()
 print('btn continue click')
-
+time.sleep(3)
 #finish product 1
-finish_product = driver.find_element('xpath','//a[@id="item_4_title_link"]')
+finish_product = driver.find_element('xpath','//*[@class="inventory_item_name"]')
 value_finish_product = finish_product.text
 print(f'value_finish_product {value_finish_product}')
 finish_price = driver.find_element('xpath','//div[@class="inventory_item_price"]')
