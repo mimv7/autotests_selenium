@@ -41,7 +41,7 @@ index = int(num_product)
 
 # === ТРИ УНИВЕРСАЛЬНЫХ ЛОКАТОРА (на основе f-строк и индексов) ===
 # Находим нужную карточку товара по счету, а внутри нее берем название, цену или кнопку
-product_title_xpath = f'(//div[@class="inventory_item"])[{index}]//div[@class="inventory_item_name "]'
+product_title_xpath = f'(//div[@class="inventory_item"])[{index}]//div[contains(@class, "inventory_item_name")]'
 product_price_xpath = f'(//div[@class="inventory_item"])[{index}]//div[@class="inventory_item_price"]'
 add_to_cart_xpath = f'(//div[@class="inventory_item"])[{index}]//button'
 
