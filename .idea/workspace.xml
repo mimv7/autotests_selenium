@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ac57602-3189-418a-a207-dbf2ddf32840" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,48 +44,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.diet.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dowload_file.executor&quot;: &quot;Run&quot;,
-    &quot;Python.edit.executor&quot;: &quot;Run&quot;,
-    &quot;Python.eller_project.executor&quot;: &quot;Run&quot;,
-    &quot;Python.explicit_waits.executor&quot;: &quot;Run&quot;,
-    &quot;Python.handling_exceptions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.home_work_5_24.executor&quot;: &quot;Run&quot;,
-    &quot;Python.iframe (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Python.iframe.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lesson1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.smoke.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_alert.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_back_forward.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_checkbox.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_date_picker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_drop_down.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_faker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_iframe (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_iframe.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_open_burgermenu_pozitiv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_radiobutton.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_simple_form.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_slider.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_tab.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_user_authorization_incorrect_password.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_user_authorization_pozitiv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_user_authorization_pozitiv_click_enter.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_user_filter_after_authorization_pozitiv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_user_scrolling_pozitiv.executor&quot;: &quot;Run&quot;,
-    &quot;Python.upload.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Python/autotest_selenium&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.diet.executor": "Run",
+    "Python.dowload_file.executor": "Run",
+    "Python.edit.executor": "Run",
+    "Python.eller_project.executor": "Run",
+    "Python.explicit_waits.executor": "Run",
+    "Python.handling_exceptions.executor": "Run",
+    "Python.home_work_5_24.executor": "Run",
+    "Python.iframe (1).executor": "Debug",
+    "Python.iframe.executor": "Run",
+    "Python.lesson1.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.smoke.executor": "Run",
+    "Python.test3.executor": "Run",
+    "Python.test_2.executor": "Run",
+    "Python.test_alert.executor": "Run",
+    "Python.test_back_forward.executor": "Run",
+    "Python.test_checkbox.executor": "Run",
+    "Python.test_date_picker.executor": "Run",
+    "Python.test_drop_down.executor": "Run",
+    "Python.test_faker.executor": "Run",
+    "Python.test_iframe (1).executor": "Run",
+    "Python.test_iframe.executor": "Run",
+    "Python.test_open_burgermenu_pozitiv.executor": "Run",
+    "Python.test_radiobutton.executor": "Run",
+    "Python.test_simple_form.executor": "Run",
+    "Python.test_slider.executor": "Run",
+    "Python.test_tab.executor": "Run",
+    "Python.test_user_authorization_incorrect_password.executor": "Run",
+    "Python.test_user_authorization_pozitiv.executor": "Run",
+    "Python.test_user_authorization_pozitiv_click_enter.executor": "Run",
+    "Python.test_user_filter_after_authorization_pozitiv.executor": "Run",
+    "Python.test_user_scrolling_pozitiv.executor": "Run",
+    "Python.upload.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Python/autotest_selenium"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Python\autotest_selenium" />
@@ -95,7 +96,7 @@
       <recent name="C:\Python\autotest_selenium" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_2">
+  <component name="RunManager" selected="Python.test3">
     <configuration name="dowload_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="autotests_selenium" />
       <option name="ENV_FILES" value="" />
@@ -162,6 +163,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="autotests_selenium" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="autotests_selenium" />
       <option name="ENV_FILES" value="" />
@@ -184,35 +207,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="upload" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="autotests_selenium" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/upload.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test3" />
         <item itemvalue="Python.test_2" />
         <item itemvalue="Python.explicit_waits" />
         <item itemvalue="Python.handling_exceptions" />
         <item itemvalue="Python.dowload_file" />
-        <item itemvalue="Python.upload" />
       </list>
     </recent_temporary>
   </component>
