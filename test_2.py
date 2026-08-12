@@ -50,28 +50,28 @@ if num_product == '1':
     cart.click()
     print('open cart')
     # info cart
-    cart_product = driver.find_element('xpath', '//a[@id="item_4_title_link"]')
-    value_cart_product = cart_product.text
-    print(f'value_cart_product_1 - {value_cart_product}')
+    cart_product_1 = driver.find_element('xpath', '//a[@id="item_4_title_link"]')
+    value_cart_product_1 = cart_product_1.text
+    print(f'value_cart_product_1 - {value_cart_product_1}')
     cart_price = driver.find_element('xpath','//div[@class="inventory_item_price"]')
     value_cart_price = cart_price.text
     print(f'value_cart_price_1 - {value_cart_price}')
     # assert
-    assert value_product == value_cart_product
+    assert value_product == value_cart_product_1
     print('\n assert value card - ok')
     assert value_price == value_cart_price
     print('\n assert price - ok\n')
 
 elif  num_product == '2':
     print('Sauce Labs Bike Light')
-    product_2 = driver.find_element('xpath', '//a[@id="item_4_title_link"]')
-    value_product_2 = product_2.text
-    print(f'value_product_2 - {value_product_2}')
-    price_2 = driver.find_element('xpath', '//*[@id="inventory_container"]/div/div[1]/div[2]/div[2]/div')
-    value_price_2 = price_2.text
-    print(f'value_price_1 - {value_price_2}')
+    product_2 = driver.find_element('xpath', '//a[@id="item_0_title_link"]')
+    value_product = product_2.text
+    print(f'value_product_2 - {value_product}')
+    price_2 = driver.find_element('xpath', '//*[@id="inventory_container"]/div/div[2]/div[2]/div[2]/div')
+    value_price = price_2.text
+    print(f'value_price_1 - {value_price}')
     # select product 2
-    select_product_2 = driver.find_element('xpath', '//*[@id="add-to-cart-sauce-labs-backpack"]')
+    select_product_2 = driver.find_element('xpath', '//*[@id="add-to-cart-sauce-labs-bike-light"]')
     select_product_2.click()
     print('select_product_2')
     # open shopping cart
@@ -79,26 +79,130 @@ elif  num_product == '2':
     cart.click()
     print('open cart')
     # info cart
-    cart_product_2 = driver.find_element('xpath', '//a[@id="item_4_title_link"]')
+    cart_product_2 = driver.find_element('xpath', '//a[@id="item_0_title_link"]')
     value_cart_product_2 = cart_product_2.text
     print(f'value_cart_product_2 - {value_cart_product_2}')
-    cart_price_2 = driver.find_element('xpath', '//div[@class="inventory_item_price"]')
-    value_cart_price_2 = cart_price_2.text
-    print(f'value_cart_price_2 - {value_cart_price_2}')
+    cart_price = driver.find_element('xpath', '//div[@class="inventory_item_price"]')
+    value_cart_price = cart_price.text
+    print(f'value_cart_price_2 - {value_cart_price}')
     # assert
-    assert value_product_2 == value_cart_product_2
+    assert value_product == value_cart_product_2
     print('\n assert value card - ok')
-    assert value_price_2 == value_cart_price_2
+    assert value_price == value_cart_price
     print('\n assert price - ok\n')
 
 elif num_product == '3':
     print('Sauce Labs Bolt T-Shirt')
+    product_3 = driver.find_element('xpath', '//a[@id="item_1_title_link"]')
+    value_product = product_3.text
+    print(f'value_product_3 - {value_product}')
+    price_3 = driver.find_element('xpath', '//*[@id="inventory_container"]/div/div[3]/div[2]/div[2]/div')
+    value_price = price_3.text
+    print(f'value_price_3 - {value_price}')
+    # select product_3
+    select_product_3 = driver.find_element('xpath', '//*[@id="add-to-cart-sauce-labs-bolt-t-shirt"]')
+    select_product_3.click()
+    print('select_product_3')
+    # open shopping cart
+    cart = driver.find_element('xpath', '//*[@id="shopping_cart_container"]')
+    cart.click()
+    print('open cart')
+    # info cart
+    cart_product_3 = driver.find_element('xpath', '//a[@id="item_1_title_link"]')
+    value_cart_product_3 = cart_product_3.text
+    print(f'value_cart_product_3 - {value_cart_product_3}')
+    cart_price = driver.find_element('xpath', '//div[@class="inventory_item_price"]')
+    value_cart_price = cart_price.text
+    print(f'value_cart_price_3 - {value_cart_price}')
+    # assert
+    assert value_product == value_cart_product_3
+    print('\n assert value card - ok')
+    assert value_price == value_cart_price
+    print('\n assert price - ok\n')
 elif num_product == '4':
     print('Sauce Labs Fleece Jacket')
+    product_4 = driver.find_element('xpath', '//a[@id="item_5_title_link"]')
+    value_product = product_4.text
+    print(f'value_product_4 - {value_product}')
+    price_4 = driver.find_element('xpath', '//*[@id="inventory_container"]/div/div[4]/div[2]/div[2]/div')
+    value_price = price_4.text
+    print(f'value_price_4 - {value_price}')
+    # select product_4
+    select_product_4 = driver.find_element('xpath', '//*[@id="add-to-cart-sauce-labs-fleece-jacket"]')
+    select_product_4.click()
+    print('select_product_4')
+    # open shopping cart
+    cart = driver.find_element('xpath', '//*[@id="shopping_cart_container"]')
+    cart.click()
+    print('open cart')
+    # info cart
+    cart_product_4 = driver.find_element('xpath', '//a[@id="item_5_title_link"]')
+    value_cart_product_4 = cart_product_4.text
+    print(f'value_cart_product_4 - {value_cart_product_4}')
+    cart_price = driver.find_element('xpath', '//div[@class="inventory_item_price"]')
+    value_cart_price = cart_price.text
+    print(f'value_cart_price_4 - {value_cart_price}')
+    # assert
+    assert value_product == value_cart_product_4
+    print('\n assert value card - ok')
+    assert value_price == value_cart_price
+    print('\n assert price - ok\n')
 elif num_product == '5':
     print('Sauce Labs Onesie')
+    product_5 = driver.find_element('xpath', '//a[@id="item_2_title_link"]')
+    value_product = product_5.text
+    print(f'value_product_5 - {value_product}')
+    price_5 = driver.find_element('xpath', '//*[@id="inventory_container"]/div/div[5]/div[2]/div[2]/div')
+    value_price = price_5.text
+    print(f'value_price_5 - {value_price}')
+    # select product_5
+    select_product_5 = driver.find_element('xpath', '//*[@id="add-to-cart-sauce-labs-onesie"]')
+    select_product_5.click()
+    print('select_product_5')
+    # open shopping cart
+    cart = driver.find_element('xpath', '//*[@id="shopping_cart_container"]')
+    cart.click()
+    print('open cart')
+    # info cart
+    cart_product_5 = driver.find_element('xpath', '//a[@id="item_2_title_link"]')
+    value_cart_product_5 = cart_product_5.text
+    print(f'value_cart_product_5 - {value_cart_product_5}')
+    cart_price = driver.find_element('xpath', '//div[@class="inventory_item_price"]')
+    value_cart_price = cart_price.text
+    print(f'value_cart_price_5 - {value_cart_price}')
+    # assert
+    assert value_product == value_cart_product_5
+    print('\n assert value card - ok')
+    assert value_price == value_cart_price
+    print('\n assert price - ok\n')
 elif num_product == '6':
     print('Test.allTheThings() T-Shirt (Red)')
+    product_6 = driver.find_element('xpath', '//a[@id="item_3_title_link"]')
+    value_product = product_6.text
+    print(f'value_product_6 - {value_product}')
+    price_6 = driver.find_element('xpath', '//*[@id="inventory_container"]/div/div[6]/div[2]/div[2]/div')
+    value_price = price_6.text
+    print(f'value_price_5 - {value_price}')
+    # select product_6
+    select_product_6 = driver.find_element('xpath', '//*[@id="add-to-cart-test.allthethings()-t-shirt-(red)"]')
+    select_product_6.click()
+    print('select_product_6')
+    # open shopping cart
+    cart = driver.find_element('xpath', '//*[@id="shopping_cart_container"]')
+    cart.click()
+    print('open cart')
+    # info cart
+    cart_product_6 = driver.find_element('xpath', '//a[@id="item_3_title_link"]')
+    value_cart_product_6 = cart_product_6.text
+    print(f'value_cart_product_6 - {value_cart_product_6}')
+    cart_price = driver.find_element('xpath', '//div[@class="inventory_item_price"]')
+    value_cart_price = cart_price.text
+    print(f'value_cart_price_6 - {value_cart_price}')
+    # assert
+    assert value_product == value_cart_product_6
+    print('\n assert value card - ok')
+    assert value_price == value_cart_price
+    print('\n assert price - ok\n')
 else:
     print('Вы выбрали что то не то')
 #------------------------------------
